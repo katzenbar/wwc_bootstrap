@@ -1,0 +1,55 @@
+Ada Lovelace
+123 Central Parkway
+Cincinnati, OH 45202
+
+Email: alovelace@example.com
+Github: alovelace
+Twitter: alovelace
+
+## Summary
+
+I am a Senior Software Developer specializing in front-end development. I have experience working
+on a wide variety of projects, big and small. I help create rich web experiences using Javascript,
+CSS, and HTML.
+
+## Skills
+
+- Javascript
+  - Angular
+  - React
+  - Webpack
+  - Babel
+- CSS + HTML
+- Ruby on Rails
+- Search Engine Optimization
+
+## Education
+
+August 2008 - May 2013
+University of Cincinnati
+Computer Science, B.S.
+
+## Experience
+
+November 2015 - Present
+Big Bank
+Cincinnati, OH
+Software Developer
+
+- Collaborated with designer and project managers to create updated user interfaces for the
+customer interface.
+- Led development of several features including custom marketing pages for the different credit
+cards being offered and promotional offers using React.
+- Carried out quality assurance tests to discover errors and optimize usability.
+
+
+
+June 2013 - November 2015
+Some Agency, LLC
+Cleveland, OH
+Web Developer
+
+- Worked with a small development team on a client project. Worked directly with the client
+to get business requirements and plan features for the project.
+- Used Angular to build an interactive web application for a small business.
+- Gave presentation on how to build forms using Angular at a local meetup group.
