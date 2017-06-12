@@ -22,10 +22,63 @@
 
       <hr>
 
-      <h2>The Bootstrap Grid System</h2>
+      <div class="row">
+        <div class="col-12">
+          <h2>Table of Contents</h2>
+
+          <ul>
+            <li>
+              <a href="#introduction">Introduction</a>
+            </li>
+
+            <li>
+              <a href="#grid">The Bootstrap Grid System</a>
+              <ul>
+                <li><a href="#grid-columns">Working with Columns</a></li>
+                <li><a href="#grid-responsive">Responsive Layouts</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#typography">Typography</a>
+              <ul>
+                <li><a href="#typography-headings">Headings</a></li>
+                <li><a href="#typography-lists">Lists</a></li>
+                <li><a href="#typography-descriptions">Description Lists</a></li>
+                <li><a href="#typography-colors">Colors</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
 
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-12">
+          <h2 id="introduction">Introduction</h2>
+
+          <p>
+            Bootstrap is an extremely popular front-end framework for developing on the web. Used
+            for marketing pages, web applications, and everything in between, it makes building
+            websites fast and easy. To use Bootstrap all you need to know is the basics of HTML,
+            CSS, and a little patience to read through the documentation.
+          </p>
+
+          <p>
+            This tutorial will take you through the basics of using the Bootstrap CSS framework
+            to develop a simple webpage, like a resume. This was written using Bootstrap 4
+            alpha 6, but the few small diferences from Bootstrap 3 are noted as they come up.
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <h2 id="grid">The Bootstrap Grid System</h2>
+
+      <div class="row">
+        <div class="col-12">
           <ul>
             <li><a href="https://v4-alpha.getbootstrap.com/layout/grid/">Bootstrap 4 alpha layout documentation</a></li>
             <li><a href="http://getbootstrap.com/css/#grid">Bootstrap 3 layout documentation</a></li>
@@ -111,7 +164,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2>Working with Columns</h2>
+          <h2 id="grid-columns">Working with Columns</h2>
 
           <p>
             Bootstrap uses a 12-column grid system. Column elements may span multiple columns to
@@ -219,7 +272,7 @@
 
       <div class="row">
         <div class="col-12">
-          <h2>Responsive Layouts</h2>
+          <h2 id="grid-responsive">Responsive Layouts</h2>
 
           <p>
             Bootstrap is made for creating responsive websites. There are five different screen
@@ -304,6 +357,244 @@
           <p>
             Watch as the column changes sizes as the size of your browser changes.
           </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-12">
+          <h2>Protip! <small class="text-muted">Building layouts in Bootstrap</small></h2>
+
+          <p>
+            When initially working on your layout, make all columns using the <code>.col-lg-#</code>
+            size (<code>.col-md-# in v3</code>). This lets you get a basic layout designed for
+            desktops, but it will collapse to every column taking the full screen width on smaller
+            screens which is often the desired behavior.
+
+            <br>
+
+            Once you have finished your website, you can go back and tweak the column sizes
+            for smaller screens if needed to add that final polish.
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-12">
+          <h2 id="typography">Typography</h2>
+
+          <ul>
+            <li><a href="http://v4-alpha.getbootstrap.com/content/typography/">Bootstrap 4 documentation</a></li>
+            <li><a href="http://getbootstrap.com/css/#type">Bootstrap 3 documentation</a></li>
+          </ul>
+
+          <h3 id="typography-headings">Headings</h3>
+
+          <p>
+            Bootstrap has styles for all headings sizes, <code>h1</code> through <code>h6</code>.
+            These work without any classes on the heading elements, and can also be applied to
+            <code>p</code> elements using the classes <code>.h1</code> through <code>.h6</code>.
+            Optionally, you can add smaller, secondary text next to the headings as well.
+          </p>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h1>Heading h1</h1>
+              <h2>Heading h2</h2>
+              <h3>Heading h3</h3>
+              <h4>Heading h4</h4>
+              <h5>Heading h5</h5>
+              <h6>Heading h6</h6>
+
+              <br>
+
+              <p class="h1">Heading, p with .h1 class</p>
+
+              <br>
+
+              <h1>Heading h1 <small class="text-muted">with a subheading</small></h1>
+            </div>
+
+            <div class="col-lg-6">
+<xmp class="my-3 px-5 py-3 bg-faded"><h1>Heading h1</h1>
+<h2>Heading h2</h2>
+<h3>Heading h3</h3>
+<h4>Heading h4</h4>
+<h5>Heading h5</h5>
+<h6>Heading h6</h6>
+
+<br>
+
+<p class="h1">Heading, p with .h1 class</p>
+
+<br>
+
+<h1>
+  Heading h1
+  <small class="text-muted">with a subheading</small>
+</h1></xmp>
+            </div>
+          </div>
+
+          <hr>
+
+          <h3 id="typography-lists">Lists</h3>
+
+          <p>
+            Basic HTML lists are available in Bootstrap, with a unstyled list option available
+            as well.
+          </p>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>Unordered list</h4>
+              <ul>
+                <li>Cats</li>
+                <li>Dogs</li>
+                <li>Fish</li>
+              </ul>
+
+              <h4>Ordered lst</h4>
+              <ol>
+                <li>Cats</li>
+                <li>Dogs</li>
+                <li>Fish</li>
+              </ol>
+
+              <h4>Unstyled list</h4>
+              <ul class="list-unstyled">
+                <li>Cats</li>
+                <li>Dogs</li>
+                <li>Fish</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-6">
+<xmp class="my-3 px-5 py-3 bg-faded"><h4>Unordered list</h4>
+<ul>
+  <li>Cats</li>
+  <li>Dogs</li>
+  <li>Fish</li>
+</ul>
+
+<h4>Ordered lst</h4>
+<ol>
+  <li>Cats</li>
+  <li>Dogs</li>
+  <li>Fish</li>
+</ol>
+
+<h4>Unstyled list</h4>
+<ul class="list-unstyled">
+  <li>Cats</li>
+  <li>Dogs</li>
+  <li>Fish</li>
+</ul></xmp>
+            </div>
+          </div>
+
+          <hr>
+
+          <h3 id="typography-descriptions">Description Lists</h3>
+
+          <p class="mb-5">
+            Description lists are lesser known, but extremely useful elements, especially for
+            building something like a resume.
+          </p>
+
+          <div class="row">
+            <div class="col-12">
+              <dl class="row">
+                <dt class="col-sm-3">Description lists</dt>
+                <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+                <dt class="col-sm-3">Euismod</dt>
+                <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                <dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta gravida at eget metus.</dd>
+
+                <dt class="col-sm-3">Malesuada porta</dt>
+                <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+                <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+                <dt class="col-sm-3">Nesting</dt>
+                <dd class="col-sm-9">
+                  <dl class="row">
+                    <dt class="col-sm-4">Nested definition list</dt>
+                    <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                  </dl>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="col-12">
+<xmp class="my-3 px-5 py-3 bg-faded"><dl class="row">
+  <dt class="col-sm-3">Description lists</dt>
+  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+  <dt class="col-sm-3">Euismod</dt>
+  <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+  <dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta gravida at eget metus.</dd>
+
+  <dt class="col-sm-3">Malesuada porta</dt>
+  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+  <dd class="col-sm-9">
+    Fusce dapibus, tellus ac cursus commodo,
+    tortor mauris condimentum nibh, ut fermentum
+    massa justo sit amet risus.
+  </dd>
+
+  <dt class="col-sm-3">Nesting</dt>
+  <dd class="col-sm-9">
+    <dl class="row">
+      <dt class="col-sm-4">Nested definition list</dt>
+      <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+    </dl>
+  </dd>
+</dl></xmp>
+            </div>
+          </div>
+
+          <hr>
+
+          <h3 id="typography-colors">Colors</h3>
+
+          <p>
+            There are several utility classes that allow you to apply Bootstrap-themed colors
+            to your text. The class names reflect how they might be used in a web application.
+          </p>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="text-muted">A medium gray color</p>
+              <p class="text-primary">A vibrant blue color</p>
+              <p class="text-success">A strong green color</p>
+              <p class="text-info">A light sea blue</p>
+              <p class="text-warning">A strong yellow color</p>
+              <p class="text-danger">A bright red color</p>
+              <p class="text-white">You can't see me!</p>
+            </div>
+
+            <div class="col-lg-6">
+<xmp class="my-3 px-5 py-3 bg-faded"><p class="text-muted">A medium gray color</p>
+<p class="text-primary">A vibrant blue color</p>
+<p class="text-success">A strong green color</p>
+<p class="text-info">A light sea blue</p>
+<p class="text-warning">A strong yellow color</p>
+<p class="text-danger">A bright red color</p>
+<p class="text-white">You can't see me!</p></xmp>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
         </div>
       </div>
 
